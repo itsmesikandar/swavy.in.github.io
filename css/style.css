@@ -9688,12 +9688,19 @@ body.sidebar-open::before {
 }
 
 .contact-us .contact-us-bgimage {
-  background-image: url("../images/gdpr.jpg");
+  background-image: url("../images/gppdr.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   padding: 83px 0px 68px 0px;
+  border-radius: 20px;
+}
+
+.contact-us .contact-upper {
+  text-align: center;
+  padding: 83px 0px 68px 0px;
+  border-radius: 20px;
 }
 
 .contact-details .mdi {
@@ -10307,3 +10314,45 @@ footer a:hover {
   padding: 0px;
 }
 
+#navbar{
+  background-color: #fefefe;
+  height: 40px;
+}
+
+header nav {
+  height: 60px;
+}
+
+.bor{
+  border: 3px red solid;
+}
+
+.margin-top {
+  padding-top: 40px;
+}
+
+@media (max-width: 578px) {
+  #ht {
+    font-size:20px;
+  }    
+}
+
+
+.fw {
+  color: white;
+}
+
+.r-20 {
+  border-radius: 20px;
+}
+
+.tcb {
+  color: black;
+}
+
+input[type=email] {
+  
+  padding:.375rem .75rem;
+  border-radius: 20px;
+  border: 2px solid #000000;
+}
