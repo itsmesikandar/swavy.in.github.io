@@ -24,20 +24,18 @@
 </head>
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
   <header id="header-section">
-    <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
+    <nav class="navbar navbar-expand-lg pl-3 pl-sm-0 py-4" id="navbar">
     <div class="container">
       <div class="navbar-brand-wrapper d-flex ">
         <h4 style="color:rgb(253, 81, 1); font-size: 18px;">#NotJustSocialMedia</h4>
-      
       </div>
-      
     </div> 
     </nav>   
   </header>
   <div class="banner" >
     <div class="container-fluid">
-      <h1 class="font-weight-semibold">Discover<br>The Best Form Of People.</h1>
-      <h5 class="font-weight-normal text-muted pb-3">Where people create themselves, not Platform.</h5>
+      <h1 class="font-weight-semibold margin-top" id="ht">Discover<br>The Best Form Of Yourself</h1>
+      <h5 class="font-weight-normal text-muted pb-3">Where humans create themselves, not Platform.</h5>
       <img src="images/hero-img.png" alt="" class="img-fluid">
     </div>
   </div>
@@ -45,13 +43,36 @@
         <div class="container">
           <section class="features-overview" id="features-section" >
             <div class="content-header">
-              <h2>Bored while seeing same profiles design likes you?</h2>
-              <h6 class="section-subtitle text-muted">Billions of people too, But What if i say<br>You can have your website as your social identity! for free.</h6>
+              <h3><b>Bored seeing same profiles design?</b></h3>
+              <h6 class="section-subtitle text-muted">Billions others too, What if i say<br>You can have your website as your social identity! for free.</h6>
               <!-- <video  width="100%" height="100%" controls autoplay>  
                 <source src="images/vd.mp4" type="video/mp4">  
               </video> -->
             </div>
+
+            <!-- <div class="contact-us" id="contact-section">
+              <div class="container">
+                <div class=" contact-upper" >
+                  <div data-aos="fade-up">
+                    <div class="col-12  offset-sm-3 col-sm-6 offset-sm-3 offset-lg-3 col-lg-6 offset-lg-3 ">
+                      <form name="submit-to-google-sheet" id="myFormm">
+                        <div class="">
+                          <input type="email" placeholder="Enter your email address" />
+                          <button type="submit" class="btn btn-danger r-20 font-weight-medium">Get Early Access</button>
+                       </div>
+                         <input type="email" name="Email" class="input-form-control r-20" id="Email" placeholder="Enter your email address">
+                        <div class="pt-3">
+                          <button type="submit" class="btn btn-danger r-20 font-weight-medium">Get Early Access</button>
+                        </div> 
+                      </form>
+                    </div>
+                  </div>         
+                </div>
+              </div>
+            </div> -->
+
             <div class="content-header  ">
+              <h6 class="section-subtitle text-muted">Where you can.</h6>
               <h5 class="section-subtitle text-muted "></h5>
               <h3 class=""><b>Show what you are but better.</b></h3>
             </div>
@@ -241,28 +262,27 @@
           </div>
         </div>
       </section>     
-      
-      <section class="contact-us" id="contact-section">
-        <div class="container-fluid">
-          <div class="contact-us-bgimage grid-margin " >
-            <div class="pb-4">
-              <h3 class="px-3 px-md-0 m-0" data-aos="fade-down">Reserve yourself<br> in our waitlist.</h3>
-            </div>
-            <div data-aos="fade-up">
-              <div class="col-12  offset-sm-3 col-sm-6 offset-sm-3 offset-lg-4 col-lg-4 offset-lg-4 ">
-                <form name="submit-to-google-sheet" id="myForm">
-                  <input type="email" name="Email" class="input-form-control" id="Email" placeholder="Email id">
-                  <div class="pt-3">
-                    <button type="submit" class="btn btn-danger font-weight-medium">Get Early Access</button>
-                  </div> 
-                </form>
-              </div>
-            </div>         
-          </div>
-        </div>
-      </section>
-
     </div> 
+
+    <section class="contact-us" id="contact-section">
+      <div class="container">
+        <div class="contact-us-bgimage grid-margin " >
+          <div class="pb-4">
+            <h3 class="px-3 px-md-0 m-0 fw" data-aos="fade-down">Reserve Yourself<br> in our waitlist.</h3>
+          </div>
+          <div data-aos="fade-up">
+            <div class="col-12  offset-sm-3 col-sm-6 offset-sm-3 offset-lg-4 col-lg-4 offset-lg-4 ">
+              <form name="submit-to-google-sheet" id="myForm">
+                <input type="email" name="Email" class="input-form-control r-20" id="Email" placeholder="Email id">
+                <div class="pt-3">
+                  <button type="submit" class="btn btn-danger font-weight-medium r-20">Get Early Access</button>
+                </div> 
+              </form>
+            </div>
+          </div>         
+        </div>
+      </div>
+    </section>
   </div>
 
   <script>
@@ -274,15 +294,26 @@
                                                                                    
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxXpgQgQMZqhFNl4IiDehqWTr5-PkKsvUA7oIWJAg1q1VEVA7wHIRvszY07XR8cTBPduQ/exec'
     const form = document.forms['submit-to-google-sheet']
+    //const formm = document.forms['submit-to-google-sheet']
     const fr = document.getElementById("myForm")
-  
+    //const frr = document.getElementById("myFormm")
+      
+    // formm.addEventListener('submit', e => {
+    //   e.preventDefault()
+    //   fetch(scriptURL, { method: 'POST', body: new FormData(formm)})
+    //     .then(response => 
+    //     frr.reset())
+    //     .catch(error => console.error('Error###', error.message))
+    // })
+
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => 
         fr.reset())
-        .catch(error => console.error('Error!', error.message))
+        .catch(error => console.error('Error!!!!!!', error.message))
     })
+
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
   integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
