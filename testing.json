@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.patients.bigohealth",
+    "sha256_cert_fingerprints":
+    ["42:13:99:3F:5E:97:3F:93:FF:12:91:2E:DA:20:BF:B6:A2:D1:EE:7C:BD:66:9C:67:6D:B7:5E:17:7A:E2:9A:E5"]
+  }
+}]
